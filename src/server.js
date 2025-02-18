@@ -3,6 +3,12 @@ import { rateLimit } from 'express-rate-limit';
 import session from 'express-session';
 import chalk from 'chalk';
 import { logger, blankLine } from './utility/debug.js';
+import dotenv from 'dotenv';
+
+//environment variables
+dotenv.config({
+    path: 'config.env'
+})
 
 //configure Express.js app
 const app = express();
@@ -36,6 +42,7 @@ app.use(express.static("public"));
 
 //mount routers...
 
+
 //undefined routes
 app.use((req, res) => {
     //get path of uri
@@ -43,7 +50,7 @@ app.use((req, res) => {
     res.redirect('/?error=404');
 })
 
-const PORT = 3000;
+const { PORT } = process.env;
 const server = app.listen(PORT, () => {
     logger.log(`Server started on port ${chalk.magenta(PORT)}`);
     blankLine();
