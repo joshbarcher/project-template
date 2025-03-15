@@ -5,6 +5,9 @@ import chalk from 'chalk';
 import { logger, blankLine } from './utility/debug.js';
 import dotenv from 'dotenv';
 
+import router from './routes/routes.js';
+import { logRoutes } from './utility/server.js';
+
 //environment variables
 dotenv.config({
     path: 'config.env'
@@ -41,13 +44,17 @@ app.use(limiter);
 app.use(express.static("public"));
 
 //mount routers...
-
+app.use(router);
+logRoutes(router);
 
 //undefined routes
 app.use((req, res) => {
     //get path of uri
     logger.error(`Missing path: ${req.url}`);
-    res.redirect('/?error=404');
+    res.render("error", {
+        status: 404,
+        message: "Page not found!"
+    });
 })
 
 const { PORT } = process.env;
