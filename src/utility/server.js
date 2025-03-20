@@ -1,5 +1,5 @@
 import { logger, blankLine } from './debug.js';
-import chalk from './chalk.js';
+import chalk from '@jarcher/enhanced-chalk';
 
 export const logRoutes = (prefix, router) => {
     logger.log(chalk.khaki("Routes detected:"));
