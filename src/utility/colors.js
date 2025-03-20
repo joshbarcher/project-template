@@ -1,4 +1,4 @@
-{
+export default {
     "orange": [255, 165, 0],
     "brown": [139, 69, 19],
     "teal": [0, 128, 128],

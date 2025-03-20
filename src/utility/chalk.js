@@ -1,10 +1,5 @@
 import chalk from 'chalk';
-import path from 'path';
-import fs from 'fs';
-
-// Define extended color names with RGB values
-const colorsPath = path.join(process.cwd(), '/src/utility/colors.json');
-const namedColors = JSON.parse(fs.readFileSync(colorsPath, 'utf8'));
+import colors from './colors.js';
 
 // Object to store dynamically added colors
 const customColors = {};
@@ -13,7 +8,7 @@ const customColors = {};
 const enhancedChalk = Object.create(chalk);
 
 // Attach predefined named colors
-for (const [color, [r, g, b]] of Object.entries(namedColors)) {
+for (const [color, [r, g, b]] of Object.entries(colors)) {
     enhancedChalk[color] = (text) => chalk.rgb(r, g, b)(text);
 }
 

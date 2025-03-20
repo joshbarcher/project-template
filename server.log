@@ -2,3 +2,19 @@ server.js:5 - Routes detected:
 
 server.js:37 - Server started on port 8000
 
+server.js:5 - Routes detected:
+
+server.js:37 - Server started on port 8000
+
+server.js:5 - Routes detected:
+
+server.js:37 - Server started on port 8000
+
+server.controller.js:14 - Shutting down gracefully...
+server.controller.js:17 - Server closed. Shutting down process
+server.js:5 - Routes detected:
+
+server.js:37 - Server started on port 8000
+
+server.controller.js:14 - Shutting down gracefully...
+server.controller.js:17 - Server closed. Shutting down process
