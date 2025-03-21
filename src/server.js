@@ -1,6 +1,6 @@
 import express from 'express';
 import session from 'express-session';
-import chalk from './utility/chalk.js';
+import chalk from '@jarcher/enhanced-chalk';
 import { logger, blankLine } from './utility/debug.js';
 import dotenv from 'dotenv';
 import limiter from './config/rate-limit.config.js';

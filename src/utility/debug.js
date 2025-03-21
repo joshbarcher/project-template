@@ -1,5 +1,5 @@
 import tracer from 'tracer';
-import chalk from './chalk.js';
+import chalk from '@jarcher/enhanced-chalk';
 import fs from 'fs';
 import stripAnsi from 'strip-ansi';
 
