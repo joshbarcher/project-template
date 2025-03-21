@@ -1,5 +1,4 @@
 import express from 'express';
-import { rateLimit } from 'express-rate-limit';
 import session from 'express-session';
 import chalk from './utility/chalk.js';
 import { logger, blankLine } from './utility/debug.js';
@@ -21,9 +20,11 @@ app.set("view engine", "pug");
 app.set("views", "src/views");
 
 //middleware
-app.use(session(sessionConfig));
+app.use(requestLogger);
+app.use(session(sessionConfig))
 app.use(limiter);
-app.use(express.static("public"));
+app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
 
 //mount routers...
 app.use(router);
