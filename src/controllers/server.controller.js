@@ -1,4 +1,4 @@
-import { logger } from "../utility/debug.js";
+import { logger } from "@jarcher/loggem";
 
 export const notFound = (req, res) => {
     //get path of uri

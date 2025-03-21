@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "@jarcher/enhanced-chalk": "^1.0.1",
+    "@jarcher/loggem": "^1.0.3",
     "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

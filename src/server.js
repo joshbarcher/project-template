@@ -1,11 +1,11 @@
 import express from 'express';
 import session from 'express-session';
 import chalk from '@jarcher/enhanced-chalk';
-import { logger, blankLine } from './utility/debug.js';
+import { logger, blankLine } from '@jarcher/loggem';
 import dotenv from 'dotenv';
 import limiter from './config/rate-limit.config.js';
 import sessionConfig from './config/session.config.js';
-import { notFound, shutdown } from './controllers/server.controller.js';
+import { notFound, shutdown, requestLogger } from './controllers/server.controller.js';
 import router from './routes/routes.js';
 import { logRoutes } from './utility/server.js';
 

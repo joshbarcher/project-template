@@ -1,4 +1,4 @@
-import { logger, blankLine } from './debug.js';
+import { logger, blankLine } from '@jarcher/loggem';
 import chalk from '@jarcher/enhanced-chalk';
 
 export const logRoutes = (prefix, router) => {
