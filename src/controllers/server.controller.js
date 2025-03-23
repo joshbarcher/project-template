@@ -1,4 +1,5 @@
 import { logger } from "@jarcher/loggem";
+import chalk from '@jarcher/enhanced-chalk';
 
 export const notFound = (req, res) => {
     //get path of uri
@@ -27,7 +28,7 @@ export const requestLogger = (req, res, next) => {
     const logEntry = `[${timestamp}] ${method} ${url} - IP: ${ip}, User-Agent: ${headers['user-agent']}\n`;
 
     // Log to console
-    logger.log(chalk.orlogEntry.trim());
+    logger.log(logEntry.trim());
 
     // Append log entry to file
     fs.appendFile(logFilePath, logEntry, (err) => {
