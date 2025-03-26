@@ -37,3 +37,7 @@ index.js:69 INFO: Routes detected:
 index.js:69 INFO: GET /hello
 index.js:69 INFO: [2025-03-26T18:38:05.889Z] GET /hello
 [2025-03-26T18:38:05.889Z] GET /hello
+index.js:69 INFO: Routes detected:
+index.js:69 INFO: GET /hello
+[2025-03-26T19:00:04.300Z] GET /hello
+index.js:69 INFO: [2025-03-26T19:00:04.300Z] GET /hello
