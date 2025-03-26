@@ -23,3 +23,6 @@ server.js:5 - Routes detected:
 LOG: [2025-03-20 17:25:29] server.js:5 - Routes detected:
 LOG: [2025-03-20 17:25:29] server.js:38 - Server started on port 8000
 
+index.js:69 INFO: Routes detected:
+index.js:69 INFO: Server started on port 8000
+
