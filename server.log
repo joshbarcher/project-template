@@ -26,3 +26,14 @@ LOG: [2025-03-20 17:25:29] server.js:38 - Server started on port 8000
 index.js:69 INFO: Routes detected:
 index.js:69 INFO: Server started on port 8000
 
+index.js:69 INFO: Routes detected:
+index.js:69 INFO: Server started on port 8000
+
+index.js:69 INFO: Routes detected:
+index.js:69 INFO: GET //hello
+index.js:69 INFO: Server started on port 8000
+
+index.js:69 INFO: Routes detected:
+index.js:69 INFO: GET /hello
+index.js:69 INFO: [2025-03-26T18:38:05.889Z] GET /hello
+[2025-03-26T18:38:05.889Z] GET /hello

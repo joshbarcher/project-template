@@ -1,3 +1,12 @@
+import fs from 'fs';
+import path from 'path';
+
+const logFilePath = './server.log';
+
+export const codeCoverage = (req, res) => {
+    const filePath = path.join(process.cwd(), '/coverage/lcov-report/index.html');
+    res.sendFile(filePath);
+}
 
 export const notFound = (req, res) => {
     //get path of uri
@@ -23,10 +32,10 @@ export const requestLogger = (req, res, next) => {
     const { method, url, headers, ip } = req;
     const timestamp = new Date().toISOString();
 
-    const logEntry = `[${timestamp}] ${method} ${url} - IP: ${ip}, User-Agent: ${headers['user-agent']}\n`;
+    const logEntry = `[${timestamp}] ${method} ${url}\n`;
 
     // Log to console
-    console.log(chalk.orlogEntry.trim());
+    console.log(logEntry.trim());
 
     // Append log entry to file
     fs.appendFile(logFilePath, logEntry, (err) => {
