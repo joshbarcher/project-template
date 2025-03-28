@@ -4,11 +4,14 @@ import pluginJs from "@eslint/js";
 /** @type {import('eslint').Linter.Config[]} */
 export default [
     {
-        ecmaVersion: "latest",
-        sourceType: "module",
         languageOptions: { 
-            globals: globals.browser,
-            process: "readonly"
+            ecmaVersion: "latest",
+            sourceType: "module",
+            globals: {
+                ...globals.browser,
+                ...globals.jest,   // Add this line for Jest globals
+                process: "readonly"
+            }
         }
     },
     pluginJs.configs.recommended,
