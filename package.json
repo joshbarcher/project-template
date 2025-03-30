@@ -30,13 +30,14 @@
     "upgrade": "ncu -u && npm install"
   },
   "dependencies": {
-    "@jarcher/enhanced-chalk": "^1.0.7",
-    "@jarcher/loggem": "^1.0.15",
+    "@jarcher/colors": "^1.0.2",
+    "@jarcher/loggem": "^1.0.16",
     "chalk": "^5.4.1",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "express-rate-limit": "^7.5.0",
     "express-session": "^1.18.1",
+    "lcov-parse": "^1.0.0",
     "pug": "^3.0.3",
     "strip-ansi": "^7.1.0",
     "tracer": "^1.3.0"

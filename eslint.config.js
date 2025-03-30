@@ -35,10 +35,6 @@ export default [
             "no-unreachable": "error",
             "no-unreachable-loop": "error",
             "no-unused-vars": "warn",
-            "no-use-before-define": ["warn", {
-                "functions": false,
-                "variables": true
-            }],
             "no-useless-assignment": "warn",
             "use-isnan": "warn",
             "valid-typeof": "error",
@@ -53,7 +49,7 @@ export default [
             "default-param-last": "error",
             "default-case-last": "error",
             "max-lines": ["error", {
-                "max": 300, 
+                "max": 500, 
                 "skipBlankLines": true,
                 "skipComments": true
             }],
@@ -67,9 +63,6 @@ export default [
             "no-global-assign": "error",
             "no-lone-blocks": "warn",
             "no-lonely-if": "warn",
-            "no-magic-numbers": ["warn", {
-                "ignore": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-            }],
             "no-nested-ternary": "warn",
             "no-octal": "warn",
             "no-redeclare": "error",

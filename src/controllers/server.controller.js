@@ -17,19 +17,17 @@ export const notFound = (req, res) => {
     });
 }
 
-export const shutdown = server => {
-    return () => {
-        console.log("Shutting down gracefully...");
-    
-        server.close(() => {
-            console.log("Server closed. Shutting down process");
-            process.exit(0);
-        })
-    }
+export const shutdown = server => () => {
+    console.log("Shutting down gracefully...");
+
+    server.close(() => {
+        console.log("Server closed. Shutting down process");
+        process.exit(0);
+    })
 }
 
 export const requestLogger = (req, res, next) => {
-    const { method, url, headers, ip } = req;
+    const { method, url } = req;
     const timestamp = new Date().toISOString();
 
     const logEntry = `[${timestamp}] ${method} ${url}\n`;

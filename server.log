@@ -1,0 +1,10 @@
+server.util.js:4 INFO: Routes detected:
+server.util.js:8 INFO: GET /hello
+server.js:8 INFO: Server started on port 8000
+
+server.util.js:12 INFO: 
+server.util.js:4 INFO: Routes detected:
+server.util.js:8 INFO: GET /hello
+server.js:8 INFO: Server started on port 8000
+
+

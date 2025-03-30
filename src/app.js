@@ -1,13 +1,12 @@
 import express from 'express';
 import session from 'express-session';
-import chalk from '@jarcher/enhanced-chalk';
 import '@jarcher/loggem';
 import dotenv from 'dotenv';
 import limiter from './config/rate-limit.config.js';
 import sessionConfig from './config/session.config.js';
 import { notFound, requestLogger } from './controllers/server.controller.js';
 import router from './routes/default.routes.js';
-import { logRoutes } from './utility/server.js';
+import { logRoutes } from './utility/server.util.js';
 
 //before server creation
 console.config({ includeTimestamp: false })
