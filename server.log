@@ -8,3 +8,15 @@ server.util.js:8 INFO: GET /hello
 server.js:8 INFO: Server started on port 8000
 
 
+server.util.js:4 INFO: Routes detected:
+
+server.util.js:8 INFO: GET /hello
+server.js:8 INFO: Server started on port 8000
+
+[2025-03-31T22:19:06.866Z] GET /
+server.controller.js:36 INFO: [2025-03-31T22:19:06.866Z] GET /
+server.controller.js:13 ERROR: Missing path: /
+[2025-03-31T22:19:07.019Z] GET /css/error.css
+server.controller.js:36 INFO: [2025-03-31T22:19:07.019Z] GET /css/error.css
+[2025-03-31T22:19:07.022Z] GET /images/not-found.png
+server.controller.js:36 INFO: [2025-03-31T22:19:07.022Z] GET /images/not-found.png
