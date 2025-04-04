@@ -8,6 +8,7 @@ export default [
             ecmaVersion: "latest",
             sourceType: "module",
             globals: {
+                ...globals.node,
                 ...globals.browser,
                 ...globals.jest,   // Add this line for Jest globals
                 process: "readonly"
