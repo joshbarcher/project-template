@@ -24,6 +24,7 @@ app.use(requestLogger);
 app.use(session(sessionConfig))
 app.use(limiter);
 app.use(express.static('public'));
+app.use(express.json());
 app.use("/coverage", express.static("coverage/lcov-report"));
 app.use(express.urlencoded({extended: true}));
 
