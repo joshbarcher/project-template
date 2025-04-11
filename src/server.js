@@ -5,7 +5,7 @@ import app from './app.js';
 
 const { PORT } = process.env;
 const server = app.listen(PORT, () => {
-    console.log(`Server started on port ${colors.magenta(PORT)}\n`);
+    console.log(`Server started on ${colors.magenta(`https://localhost:${PORT}`)}\n`);
 });
 
 process.on("SIGINT", shutdown(server));
