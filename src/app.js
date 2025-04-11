@@ -10,7 +10,7 @@ import { logRoutes } from './utility/server.util.js';
 
 //before server creation
 console.config({ includeTimestamp: false })
-dotenv.config({ path: 'config.env' });
+dotenv.config();
 
 //configure Express.js app
 const app = express();
